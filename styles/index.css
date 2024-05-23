@@ -1,163 +1,176 @@
+/* Style général pour le body */
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #2B2983;
-    margin: 0;
-    background: radial-gradient(circle, #E9EFF2 5%, #BBE1F4 50%, #91D5F6 100%) ;
+    font-family: 'Roboto', sans-serif; /* Utilise la police Roboto */
+    color: #2B2983; /* Couleur de texte principale */
+    margin: 0; /* Supprime les marges par défaut */
+    background: radial-gradient(circle, #E9EFF2 5%, #BBE1F4 50%, #91D5F6 100%); /* Dégradé radial pour l'arrière-plan */
 }
 
+/* Style pour l'élément principal */
 main {
-    position: relative;
-    padding-top: 5%;
-    text-align: center;
-    /* width: 360px;
-    height: 800px;
-    border: 1px solid white;
-    border-radius: 50px;
-    margin: 10% auto;
-    box-shadow: 10px 17px 10px rgba(0, 0, 0, 0.1); */
+    position: relative; /* Position relative pour un positionnement interne */
+    padding-top: 5%; /* Padding en haut de 5% */
+    text-align: center; /* Texte centré */
 }
 
+/* Style pour le bouton de menu hamburger */
 .menu-toggle {
-    position: absolute;
-    top: 20px; /* Ajustez la position verticale selon vos besoins */
-    right: 20px; /* Ajustez la position horizontale selon vos besoins */
-    cursor: pointer;
-    z-index: 1000; /* Assurez-vous que le bouton est au-dessus du contenu */
-    width: 40px; /* Ajustez la largeur de la div selon vos besoins */
-    height: 40px; /* Ajustez la hauteur de la div selon vos besoins */
-    border-radius: 50%; /* Rendre la div ronde */
-    background-color: white; /* Couleur de fond */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 10px 17px 10px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Position absolue pour le placer en haut à droite */
+    top: 20px; /* Positionnement vertical */
+    right: 20px; /* Positionnement horizontal */
+    cursor: pointer; /* Curseur en forme de main pour l'interactivité */
+    z-index: 1000; /* Assure que le bouton est au-dessus du contenu */
+    width: 40px; /* Largeur du bouton */
+    height: 40px; /* Hauteur du bouton */
+    border-radius: 50%; /* Forme ronde */
+    background-color: white; /* Couleur de fond blanche */
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: center; /* Centrage horizontal des barres */
+    align-items: center; /* Centrage vertical des barres */
+    flex-direction: column; /* Affiche les barres en colonne */
+    box-shadow: 10px 17px 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
 }
 
+/* Style pour chaque barre du bouton hamburger */
 .bar {
-    width: 20px;
-    height: 1.5px;
-    background-color: #2B2983; /* Couleur des barres du bouton hamburger */
-    margin: 3px 0;
-    border-radius: 2px;
+    width: 20px; /* Largeur des barres */
+    height: 1.5px; /* Hauteur des barres */
+    background-color: #2B2983; /* Couleur des barres */
+    margin: 3px 0; /* Espace entre les barres */
+    border-radius: 2px; /* Bords arrondis */
 }
 
-
+/* Conteneur principal */
 .corps {
-    width: 250px;
-    margin: 0 auto;
+    width: 250px; /* Largeur fixe */
+    margin: 0 auto; /* Centré horizontalement */
 }
 
+/* Style pour la section profil */
 .profile {
-    background-color: #fff;
-    padding-top: 20%;
-    padding-bottom: 20px;
-    border-radius: 29px;
-    margin: 0 auto;
-    margin-top: 20px;
-    height: 200px;
-    box-shadow: 10px 17px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Fond blanc */
+    padding-top: 20%; /* Padding en haut de 20% */
+    padding-bottom: 20px; /* Padding en bas de 20px */
+    border-radius: 29px; /* Bords arrondis */
+    margin: 0 auto; /* Centré horizontalement */
+    margin-top: 20px; /* Espace en haut */
+    height: 200px; /* Hauteur fixe */
+    box-shadow: 10px 17px 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
 }
 
+/* Style pour l'image de profil */
 .profile-pic {
     position: relative; 
-    top: -70px;
-    width: 150px; 
-    height: 150px; 
-    border: 4px solid white;
-    border-radius: 50%; 
-    overflow: hidden; 
-    margin: 0 auto 20px; 
-    box-shadow: 10px 17px 10px rgba(0, 0, 0, 0.1);
+    top: -70px; /* Positionnement vertical */
+    width: 150px; /* Largeur de l'image */
+    height: 150px; /* Hauteur de l'image */
+    border: 4px solid white; /* Bordure blanche */
+    border-radius: 50%; /* Forme ronde */
+    overflow: hidden; /* Cache tout débordement */
+    margin: 0 auto 20px; /* Centré horizontalement avec un espace en bas */
+    box-shadow: 10px 17px 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
 }
 
+/* Style pour l'image à l'intérieur de .profile-pic */
 .lion {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 100%; /* Largeur complète */
+    height: auto; /* Hauteur auto */
+    display: block; /* Affiche comme un bloc */
 }
 
+/* Texte du profil */
 .profile-text {
     position: relative; 
-    top: -55px;
-    font-size: 17px;
-    font-weight: 700;
+    top: -55px; /* Positionnement vertical */
+    font-size: 17px; /* Taille de police */
+    font-weight: 700; /* Gras */
 }
 
+/* Conteneur pour les liens */
 .liens {
-    margin:35px auto ;
+    margin: 35px auto; /* Marge en haut et en bas */
 }
 
+/* Style pour la liste des boutons */
 .buttons {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime le padding */
+    text-align: center; /* Texte centré */
 }
 
+/* Style pour chaque élément de la liste */
 .buttons li {
-    margin-bottom: 10px;
-    margin: 20px 0;
+    margin-bottom: 10px; /* Marge en bas */
+    margin: 20px 0; /* Marge en haut et en bas */
 }
 
+/* Style pour les boutons dans la liste */
 .buttons li button {
-    background-color: #ffffff;
-    color: #2B2983;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 69px;
-    transition: background-color 0.4s ease;
-    width: 100%;
-    height: 49px;
-    box-shadow: 10px 17px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Fond blanc */
+    color: #2B2983; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    padding: 10px 20px; /* Padding interne */
+    font-size: 16px; /* Taille de police */
+    font-weight: 600; /* Gras */
+    cursor: pointer; /* Curseur en forme de main */
+    border-radius: 69px; /* Bords arrondis */
+    transition: background-color 0.4s ease; /* Transition pour le changement de couleur */
+    width: 100%; /* Largeur complète */
+    height: 49px; /* Hauteur fixe */
+    box-shadow: 10px 17px 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
 }
 
+/* Style pour le hover des boutons */
 .buttons li button:hover {
-    background-color: #2B2983;
-    color: #ffffff;
+    background-color: #2B2983; /* Couleur de fond au survol */
+    color: #ffffff; /* Couleur du texte au survol */
 }
 
+/* Conteneur pour les boutons sociaux */
 .social-buttons {
-    margin: 50px 0;
+    margin: 50px 0; /* Marge en haut et en bas */
 }
 
+/* Style général pour les icônes Font Awesome */
 .fa {
+    font-size: 30px; /* Taille de police */
+    width: 20px; /* Largeur */
+    height: 20px; /* Hauteur */
+    text-align: center; /* Texte centré */
+    border-radius: 50%; /* Forme ronde */
+    padding: 10px; /* Padding interne */
+    text-decoration: none; /* Pas de décoration de texte */
+    margin: 0 10px; /* Marge horizontale */
+    transition: filter 0.4s ease; /* Transition pour le filtre */
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
 
-    font-size: 30px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    border-radius: 50%;
-    padding: 10px;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: filter 0.4s ease;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
-  }
+/* Effet de survol pour les icônes sociales */
+.fa:hover {
+    filter: brightness(1.2); /* Augmente la luminosité au survol */
+}
 
-  .fa:hover {
-    filter: brightness(1.2);
-  }
-  
-  .fa-facebook {
-    background: #1877F2;
-    color: white;
-  }
+/* Style pour l'icône Facebook */
+.fa-facebook {
+    background: #1877F2; /* Couleur de fond Facebook */
+    color: white; /* Couleur de texte blanche */
+}
 
-  .fa-linkedin {
-    background: #0077B5;
-    color: white;
-  }
+/* Style pour l'icône LinkedIn */
+.fa-linkedin {
+    background: #0077B5; /* Couleur de fond LinkedIn */
+    color: white; /* Couleur de texte blanche */
+}
 
-  .fa-instagram {
-    background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7);
-    color: white;
-  }
+/* Style pour l'icône Instagram */
+.fa-instagram {
+    background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7); /* Dégradé Instagram */
+    color: white; /* Couleur de texte blanche */
+}
 
+/* Style pour le pied de page */
 footer {
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    color: #fff; /* Couleur de texte blanche */
+    text-align: center; /* Texte centré */
+    padding: 10px 0; /* Padding en haut et en bas */
 }

@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Déclaration de l'encodage du document en UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Configuration pour rendre le site responsive en utilisant le viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page -->
     <title>My Linktree Clone</title>
+    <!-- Lien vers une feuille de style CSS locale -->
     <link rel="stylesheet" href="./styles/index.css">
+    <!-- Lien vers la bibliothèque de polices Font Awesome pour les icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Lien vers la police Roboto depuis Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
     <main>
         <div class="corps">
+            <!-- Menu toggle pour afficher/masquer le menu, souvent utilisé pour les menus mobiles -->
             <div class="menu-toggle">
+                <!-- Trois barres représentant le menu hamburger -->
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>            
+            <!-- Section du profil de l'utilisateur -->
             <div class="profile">
+                <!-- Conteneur pour l'image de profil -->
                 <div class="profile-pic">
+                    <!-- Image de profil avec une classe pour le style -->
                     <img src="./assets/profilepic.jpg" alt="Photo de profil" class="lion">
                 </div>
+                <!-- Texte du profil -->
                 <div class="profile-text">
-                    <h2 class="name">
-                        Ronald Richards
-                    </h2>
-                    <p class="description">
-                        UX/UI Designer
-                    </p>
+                    <!-- Nom de l'utilisateur -->
+                    <h2 class="name">Ronald Richards</h2>
+                    <!-- Description de l'utilisateur -->
+                    <p class="description">UX/UI Designer</p>
                 </div>
             </div>
+            <!-- Liste des liens de l'utilisateur -->
             <div class="liens">
+                <!-- Liste non ordonnée pour les boutons des liens -->
                 <ul class="buttons">
-                <li><a href="./website.html"><button>Website</button></a></li>
-                <li><a href="https://github.com/pouplierloic"><button>Github</button></a></li>
-                <li><a href="#"><button>Shop</button></a></li>
-                <li><a href="#"><button>Behance</button></a></li>
+                    <!-- Chaque élément de la liste contient un lien enveloppant un bouton -->
+                    <li><a href="./website.html"><button>Website</button></a></li>
+                    <li><a href="https://github.com/pouplierloic"><button>Github</button></a></li>
+                    <li><a href="#"><button>Shop</button></a></li>
+                    <li><a href="#"><button>Behance</button></a></li>
                 </ul>
+                <!-- Boutons pour les réseaux sociaux avec des icônes Font Awesome -->
                 <div class="social-buttons">
-                    <a href="https://www.facebook.com/basicuse.net" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="https://www.facebook.com/basicuse.net" class="fa fa-facebook" aria-label="Facebook"></a>
+                    <a href="#" class="fa fa-instagram" aria-label="Instagram"></a>
+                    <a href="#" class="fa fa-linkedin" aria-label="LinkedIn"></a>
                 </div>
             </div>
         </div> 
+        <!-- Pied de page -->
         <footer>
             <p>&copy; 2024 My Linktree Clone</p>
         </footer>
     </main>
-    
 </body>
 </html>
